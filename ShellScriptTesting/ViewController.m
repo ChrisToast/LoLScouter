@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ChampionViewController.h"
 @import Foundation;
 
 @interface ViewController ()
@@ -17,7 +18,9 @@
 
 @implementation ViewController{
     NSMutableArray* enemies;
+    NSMutableArray* enemySummonerIds;
     NSMutableDictionary *champIds;
+    NSString* selectedChampToExamine;
 }
 
 
@@ -84,6 +87,7 @@
     teamId = [NSString stringWithFormat:@"%@", teamId];
     
     enemies = [[NSMutableArray alloc] init];
+    enemySummonerIds = [[NSMutableArray alloc]init];
     
     
     NSArray* participants = data[@"participants"];
@@ -97,7 +101,7 @@
             
             NSString* curID = [NSString stringWithFormat:@"%@", participants[i][@"summonerId"]];
             //NSString* curName = participants[i][@"summonerName"];
-            
+            [enemySummonerIds addObject: [participants[i][@"summonerId"] description]];
             //NSLog(@"%@", curName);
             [enemies addObject: [self getSummonerRankedData:curID withChampId:[participants[i][@"championId"] description]   ]];
             
@@ -106,7 +110,8 @@
         
     }
     
-    //NSLog(@"%@", enemies);
+    NSLog(@"%@", enemies);
+    NSLog(@"%@", enemySummonerIds);
     
     [self.myTableView reloadData];
     [self cleanUp];
@@ -219,14 +224,27 @@ NSString* formatString(NSString* original){
     
     return cell;
 }
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSLog(@"Row number %d touched", indexPath.row);
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%d", indexPath.row);
+    selectedChampToExamine = enemySummonerIds[indexPath.row];
+    NSLog(@"%@", selectedChampToExamine);
+    [self performSegueWithIdentifier:@"MySegue" sender:self];
+}
 
 //****************
 //END TABLE MAKING
 //****************
+
+//for segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    if ([[segue identifier] isEqualToString:@"MySegue"]){
+    
+        ChampionViewController* vc = [segue destinationViewController];
+        vc.summonerId = (NSString*) selectedChampToExamine;
+    }
+}
 
 
 

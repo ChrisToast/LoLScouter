@@ -54,10 +54,43 @@
                     <connections>
                         <outlet property="myTableView" destination="vId-Mb-qgu" id="Kpo-x0-KgM"/>
                         <outlet property="textField" destination="CQ6-e5-K7S" id="Aem-u1-vYE"/>
+                        <segue destination="qiA-oy-gRB" kind="modal" identifier="MySegue" id="gDc-5o-JMt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Champion View Controller-->
+        <scene sceneID="EsY-rv-rxt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxg-pj-MCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="qiA-oy-gRB" customClass="ChampionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lT-FW-ch2"/>
+                        <viewControllerLayoutGuide type="bottom" id="o1G-Pv-UC5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VPO-Zd-bBa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkY-o6-n1C">
+                                <rect key="frame" x="72" y="218" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myLabel" destination="TkY-o6-n1C" id="0YV-NB-FRf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="982" y="223"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

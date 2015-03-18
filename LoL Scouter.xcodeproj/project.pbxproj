@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		835A92801AB92165008635BC /* ChampionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835A927F1AB92165008635BC /* ChampionViewController.m */; };
 		836617B51AAE4CEE00E150A5 /* LoLChampionIDs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 836617B41AAE4CEE00E150A5 /* LoLChampionIDs.txt */; };
 		83BDE3011A9B7DA700730B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BDE3001A9B7DA600730B8B /* Foundation.framework */; };
 		83BDE3031A9B7DA700730B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BDE3021A9B7DA700730B8B /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		835A927E1AB92165008635BC /* ChampionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChampionViewController.h; path = ../ChampionViewController.h; sourceTree = "<group>"; };
+		835A927F1AB92165008635BC /* ChampionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChampionViewController.m; path = ../ChampionViewController.m; sourceTree = "<group>"; };
 		836617B41AAE4CEE00E150A5 /* LoLChampionIDs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoLChampionIDs.txt; sourceTree = "<group>"; };
 		83BDE2FD1A9B7DA600730B8B /* LoL Scouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoL Scouter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BDE3001A9B7DA600730B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 		83BDE3061A9B7DA700730B8B /* LoLScouter */ = {
 			isa = PBXGroup;
 			children = (
+				835A927E1AB92165008635BC /* ChampionViewController.h */,
+				835A927F1AB92165008635BC /* ChampionViewController.m */,
 				836617B41AAE4CEE00E150A5 /* LoLChampionIDs.txt */,
 				83BDE30F1A9B7DA700730B8B /* AppDelegate.h */,
 				83BDE3101A9B7DA700730B8B /* AppDelegate.m */,
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83BDE3171A9B7DA700730B8B /* ViewController.m in Sources */,
+				835A92801AB92165008635BC /* ChampionViewController.m in Sources */,
 				83BDE3111A9B7DA700730B8B /* AppDelegate.m in Sources */,
 				83BDE30D1A9B7DA700730B8B /* main.m in Sources */,
 			);
