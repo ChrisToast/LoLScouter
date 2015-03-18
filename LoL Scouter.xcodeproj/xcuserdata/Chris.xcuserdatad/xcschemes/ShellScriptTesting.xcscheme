@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83BDE2FC1A9B7DA600730B8B"
                BuildableName = "ShellScriptTesting.app"
-               BlueprintName = "ShellScriptTesting"
-               ReferencedContainer = "container:ShellScriptTesting.xcodeproj">
+               BlueprintName = "LoL Scouter"
+               ReferencedContainer = "container:LoL Scouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83BDE31D1A9B7DA700730B8B"
                BuildableName = "ShellScriptTestingTests.xctest"
-               BlueprintName = "ShellScriptTestingTests"
-               ReferencedContainer = "container:ShellScriptTesting.xcodeproj">
+               BlueprintName = "LoL ScouterTests"
+               ReferencedContainer = "container:LoL Scouter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83BDE2FC1A9B7DA600730B8B"
             BuildableName = "ShellScriptTesting.app"
-            BlueprintName = "ShellScriptTesting"
-            ReferencedContainer = "container:ShellScriptTesting.xcodeproj">
+            BlueprintName = "LoL Scouter"
+            ReferencedContainer = "container:LoL Scouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83BDE2FC1A9B7DA600730B8B"
             BuildableName = "ShellScriptTesting.app"
-            BlueprintName = "ShellScriptTesting"
-            ReferencedContainer = "container:ShellScriptTesting.xcodeproj">
+            BlueprintName = "LoL Scouter"
+            ReferencedContainer = "container:LoL Scouter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83BDE2FC1A9B7DA600730B8B"
             BuildableName = "ShellScriptTesting.app"
-            BlueprintName = "ShellScriptTesting"
-            ReferencedContainer = "container:ShellScriptTesting.xcodeproj">
+            BlueprintName = "LoL Scouter"
+            ReferencedContainer = "container:LoL Scouter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
