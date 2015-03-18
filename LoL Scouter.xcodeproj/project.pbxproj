@@ -84,8 +84,8 @@
 		83BDE2F41A9B7DA600730B8B = {
 			isa = PBXGroup;
 			children = (
-				83BDE3061A9B7DA700730B8B /* ShellScriptTesting */,
-				83BDE3251A9B7DA700730B8B /* ShellScriptTestingTests */,
+				83BDE3061A9B7DA700730B8B /* LoLScouter */,
+				83BDE3251A9B7DA700730B8B /* LoLScouterTests */,
 				83BDE2FF1A9B7DA600730B8B /* Frameworks */,
 				83BDE2FE1A9B7DA600730B8B /* Products */,
 			);
@@ -111,7 +111,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		83BDE3061A9B7DA700730B8B /* ShellScriptTesting */ = {
+		83BDE3061A9B7DA700730B8B /* LoLScouter */ = {
 			isa = PBXGroup;
 			children = (
 				836617B41AAE4CEE00E150A5 /* LoLChampionIDs.txt */,
@@ -123,6 +123,7 @@
 				83BDE3181A9B7DA700730B8B /* Images.xcassets */,
 				83BDE3071A9B7DA700730B8B /* Supporting Files */,
 			);
+			name = LoLScouter;
 			path = ShellScriptTesting;
 			sourceTree = "<group>";
 		};
@@ -137,12 +138,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		83BDE3251A9B7DA700730B8B /* ShellScriptTestingTests */ = {
+		83BDE3251A9B7DA700730B8B /* LoLScouterTests */ = {
 			isa = PBXGroup;
 			children = (
 				83BDE32B1A9B7DA700730B8B /* ShellScriptTestingTests.m */,
 				83BDE3261A9B7DA700730B8B /* Supporting Files */,
 			);
+			name = LoLScouterTests;
 			path = ShellScriptTestingTests;
 			sourceTree = "<group>";
 		};
